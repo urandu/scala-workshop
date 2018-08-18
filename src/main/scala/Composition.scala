@@ -1,5 +1,5 @@
-// method exercise
-object Calc {
+// function composition
+object Composition {
 
   def main(args: Array[String]): Unit = {
     println("square:" + square(3))
@@ -24,6 +24,7 @@ object Calc {
   // ignore below too high level
   def combine2[A](f: A => A, input: A): A = f(input)
 
+  def compose(f: Int => Int, g: Int => Int, input: Int): Int = g(f(input))
 
 }
 
