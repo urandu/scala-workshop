@@ -2,9 +2,12 @@
 object Demo7 {
   def main(args: Array[String]): Unit = {
 
-    println((2, 3))
+    println(factorial(2))
   }
 
+  def factorial(n: Int): BigInt = {
+    if (n == 0) 1 else n * factorial(n - 1)
+  }
 
 }
 
