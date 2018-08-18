@@ -1,11 +1,10 @@
 // method exercise
-object Calc {
+object Sum {
 
   def main(args: Array[String]): Unit = {
     println("square:" + square(3))
     println("cube:" + cube(3))
     println("combine square:" + combine(x => x * x, input = 3))
-    println("combine cubed" + combine(x => x * x * x, input = 3))
   }
 
   def square(n: Double): Double = {
