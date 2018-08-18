@@ -2,7 +2,7 @@
 object Demo7 {
   def main(args: Array[String]): Unit = {
 
-    println(factorial(2))
+    println(factorial(74))
   }
 
   def factorial(n: Int): BigInt = {
